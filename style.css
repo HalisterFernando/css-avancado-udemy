@@ -20,11 +20,13 @@
     width: 20px;
     height: 20px;
     margin-right: 2px;
+    order: 2;
 }
 
 .pai div:nth-child(3) {
     background-color: red;
     height: 60px;
+    align-self: center;
 }
 
 .pai div:nth-child(5) {
@@ -35,4 +37,5 @@
 .pai div:nth-child(7) {
     background-color: purple;
     height: 240px;
+    order: 1;
 }
