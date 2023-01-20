@@ -1,7 +1,8 @@
 .pai {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
+    align-content: center;
     flex-wrap: wrap;
     background-color: yellow;
     width: 1000px;
@@ -19,4 +20,19 @@
     width: 20px;
     height: 20px;
     margin-right: 2px;
+}
+
+.pai div:nth-child(3) {
+    background-color: red;
+    height: 60px;
+}
+
+.pai div:nth-child(5) {
+    background-color: green;
+    height: 120px;
+}
+
+.pai div:nth-child(7) {
+    background-color: purple;
+    height: 240px;
 }
