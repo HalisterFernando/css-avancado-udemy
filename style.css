@@ -1,3 +1,20 @@
-* {
-    background-color: red;
+.pai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 1000px;
+    margin: 100px auto;
+    height: 600px;
+}
+
+
+
+.pai div {
+    padding: 60px;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    width: 20px;
+    height: 20px;
 }
