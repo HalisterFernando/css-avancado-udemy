@@ -9,6 +9,11 @@ body{
 }
 
 .page-wrapper{
+  display: grid;
+  /* width: 100%; */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 3fr, 1fr, 5fr; */
+  grid-auto-rows: 250px;
 }
 
 .pad-32{
