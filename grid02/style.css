@@ -1,9 +1,10 @@
 .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 150px);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .item {
+    width: 200px;
     background-color: blue;
     color: white;
     box-sizing: border-box;
@@ -11,6 +12,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.item4 {
-    grid-column: 5/ span 3;
+.item2, .item4 {
+    background-color: yellow;
+    z-index: 5;
 }
