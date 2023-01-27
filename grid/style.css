@@ -72,7 +72,7 @@ body{
 .banner-text, .banner-image {
   width: 50%;
   display: table;
-  padding: 40px;
+  padding: 8px 40px;
 }
 
 .banner-text h1 {
@@ -85,7 +85,7 @@ body{
 .banner-text h2 {
   font-size: 28px;
   line-height: 32px;
-  margin: 56px 0 16px 0;
+  margin: 32px 0 8px 0;
   padding: 0;  
 }
 
@@ -109,7 +109,7 @@ body{
 
 .banner-image img {
   width: 100%;
-  max-width: 100%;
+  max-width: 318px;
   height: auto;
 }
 
@@ -137,7 +137,8 @@ body{
 }
 
 .rietveld img, .mondrian img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 270px;
   height: auto;
 }
 
