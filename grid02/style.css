@@ -1,0 +1,16 @@
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+}
+
+.item {
+    background-color: blue;
+    color: white;
+    box-sizing: border-box;
+    padding: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item4 {
+    grid-column: 5/ span 3;
+}
