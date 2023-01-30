@@ -1,0 +1,22 @@
+html {
+    --primary-color: green
+}
+
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0  ;
+}
+
+
+nav {
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+
+}
+
+nav h1 {
+    margin: 0;
+}
