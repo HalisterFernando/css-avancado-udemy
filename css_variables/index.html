@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,5 +18,15 @@
                 <button>Toogle Mode</button>
             </div>
         </main>
+        <script>
+            const root = document.querySelector(':root');
+            const btn = document.querySelector('button');
+
+            btn.addEventListener('click', () => {
+                root.classList.toggle('light');
+                root.classList.toggle('dark');
+
+            })
+        </script>
 </body>
 </html>
