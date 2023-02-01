@@ -5,7 +5,7 @@ ul {
 
 ul li {
   display: block;
-  background-color: blue;
+  background-color: pink;
   border-bottom: 1px solid yellow;
 }
 
@@ -20,10 +20,11 @@ nav {
 }
 
 nav a {
-  color: blue;
+  color: pink;
   text-decoration: none;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  margin-bottom: 16px;
 }
 
 nav a:hover {

@@ -1,9 +1,12 @@
+@import 'theme';
+
+
 ul {
     list-style: none;
     width: 100%;
     li {
         display: block;
-        background-color: blue;
+        background-color: $primary-color;
         border-bottom: 1px solid yellow;
     }
 }
