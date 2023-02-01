@@ -1,0 +1,48 @@
+@mixin card($bgcolor, $txtcolor, $icon) {
+    width: 20%;
+    display: table;
+    height: 300px;
+    background-color: $bgcolor;
+    background-image: url($icon);
+    background-size: 20%;
+    background-position: bottom right;
+    border-radius: 8px;
+    margin-right: 32px;
+    margin-top: 32px;
+    padding: 32px;
+    color: $txtcolor;
+
+}
+
+@mixin btn-large($height:60px, $fontsize:28px) {
+    height: $height;
+    font-size: $fontsize;
+}
+
+@mixin btn($bgcolor, $txtcolor) {
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    background-color: $bgcolor;
+    color: $txtcolor;
+    padding: 8px 32px;
+    font-size: 16px;
+}
+
+.card-positive {
+    @include card(green, black, 'images/chart-up.svg');
+}
+
+.card-negative {
+    @include card(red, white, 'images/chart-down.svg');
+}
+
+
+.btn {
+    @include btn(black, white);
+}
+
+.btn-large {
+    @include btn(black, white);
+    @include btn-large();
+}
