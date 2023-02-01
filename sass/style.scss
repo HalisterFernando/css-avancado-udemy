@@ -10,5 +10,9 @@ nav {
         color: blue;
         text-decoration: none;
         transform: scale(1.2);
+
+        &:hover {
+            color: yellow;
+        }
     }
 }

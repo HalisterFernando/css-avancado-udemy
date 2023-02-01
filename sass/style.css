@@ -25,4 +25,8 @@ nav a {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
+nav a:hover {
+  color: yellow;
+}
 /*# sourceMappingURL=style.css.map */
