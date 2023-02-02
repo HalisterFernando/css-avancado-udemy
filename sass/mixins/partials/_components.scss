@@ -1,8 +1,29 @@
+@function changeColor($type, $color) {
+    @if $type == light {
+        $newColor: lighten($color, 20%);
+        @return $newColor;
+    }
+    @else if $type == dark {
+        $newColor: darken($color, 10%);
+        @return $newColor;
+    }
+    @else if $type == comp {
+        $newColor: complement($color);
+        @return $newColor;
+    }
+    @else {
+        $newColor: $color;
+        @return $newColor;
+    }
+}
+
+
+
 @mixin card($bgcolor, $txtcolor, $icon, $badge) {
     width: 20%;
     display: table;
     height: 300px;
-    background-color: $bgcolor;
+    background-color: $bgcolor; 
     background-image: url($icon);
     background-size: 20%;
     background-position: bottom right;
@@ -12,6 +33,7 @@
     padding: 32px;
     color: $txtcolor;
     position: relative;
+    transition: all 0,2s ease-in-out;
 
     &:after {
         content: 'status: ' + $badge;
@@ -22,6 +44,10 @@
         color: white;
         padding: 6px 18px;
         border-radius: 3px;
+    }
+
+    &:hover {
+        background-color: changeColor(light, $bgcolor );
     }
 
 }
@@ -42,7 +68,7 @@
 }
 
 .card-positive {
-    @include card(green, black, 'images/chart-up.svg', 'Deu bom!');
+    @include card(changeColor(dark, green), black, 'images/chart-up.svg', 'Deu bom!');
 }
 
 .card-negative {

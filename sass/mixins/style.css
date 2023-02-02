@@ -2,7 +2,7 @@
   width: 20%;
   display: table;
   height: 300px;
-  background-color: green;
+  background-color: #004d00;
   background-image: url("images/chart-up.svg");
   background-size: 20%;
   background-position: bottom right;
@@ -12,6 +12,8 @@
   padding: 32px;
   color: black;
   position: relative;
+  -webkit-transition: all 0,2s ease-in-out;
+  transition: all 0,2s ease-in-out;
 }
 
 .card-positive:after {
@@ -23,6 +25,10 @@
   color: white;
   padding: 6px 18px;
   border-radius: 3px;
+}
+
+.card-positive:hover {
+  background-color: #00b300;
 }
 
 .card-negative {
@@ -39,6 +45,8 @@
   padding: 32px;
   color: white;
   position: relative;
+  -webkit-transition: all 0,2s ease-in-out;
+  transition: all 0,2s ease-in-out;
 }
 
 .card-negative:after {
@@ -50,6 +58,10 @@
   color: white;
   padding: 6px 18px;
   border-radius: 3px;
+}
+
+.card-negative:hover {
+  background-color: #ff6666;
 }
 
 .btn {
