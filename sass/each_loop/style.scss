@@ -1,0 +1,21 @@
+$networks: (
+    youtube: red,
+    twitter: skyblue,
+    facebook: royalblue,
+    linkedin: steelblue,
+);
+
+$networks2: 
+    youtube red 64px,
+    twitter skyblue 64px,
+    facebook royalblue 64px,
+    linkedin steelblue 64px,
+;
+
+@each $name, $color, $size in $networks2 {
+    .icon-#{$name} {
+        background-image: url('images/#{name}.svg');
+        background-color: $color;
+        font-size: $size;
+    }
+}

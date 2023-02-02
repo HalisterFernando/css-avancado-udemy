@@ -1,0 +1,24 @@
+.icon-youtube {
+  background-image: url("images/name.svg");
+  background-color: red;
+  font-size: 64px;
+}
+
+.icon-twitter {
+  background-image: url("images/name.svg");
+  background-color: skyblue;
+  font-size: 64px;
+}
+
+.icon-facebook {
+  background-image: url("images/name.svg");
+  background-color: royalblue;
+  font-size: 64px;
+}
+
+.icon-linkedin {
+  background-image: url("images/name.svg");
+  background-color: steelblue;
+  font-size: 64px;
+}
+/*# sourceMappingURL=style.css.map */
