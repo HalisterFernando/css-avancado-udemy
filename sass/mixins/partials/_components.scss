@@ -1,3 +1,5 @@
+$tema: inverno;
+
 @function changeColor($type, $color) {
     @if $type == light {
         $newColor: lighten($color, 20%);
@@ -67,8 +69,16 @@
     font-size: 16px;
 }
 
+
+
 .card-positive {
-    @include card(changeColor(dark, green), black, 'images/chart-up.svg', 'Deu bom!');
+    @if $tema == inverno {
+        @include card(changeColor(dark, cyan), black, 'images/chart-up.svg', 'Deu bom!');
+    }
+    @else {
+        @include card(changeColor(dark, green), black, 'images/chart-up.svg', 'Deu bom!');
+    }
+
 }
 
 .card-negative {
