@@ -1,4 +1,4 @@
-@mixin card($bgcolor, $txtcolor, $icon) {
+@mixin card($bgcolor, $txtcolor, $icon, $badge) {
     width: 20%;
     display: table;
     height: 300px;
@@ -11,6 +11,18 @@
     margin-top: 32px;
     padding: 32px;
     color: $txtcolor;
+    position: relative;
+
+    &:after {
+        content: 'status: ' + $badge;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background-color: black;
+        color: white;
+        padding: 6px 18px;
+        border-radius: 3px;
+    }
 
 }
 
@@ -30,11 +42,11 @@
 }
 
 .card-positive {
-    @include card(green, black, 'images/chart-up.svg');
+    @include card(green, black, 'images/chart-up.svg', 'Deu bom!');
 }
 
 .card-negative {
-    @include card(red, white, 'images/chart-down.svg');
+    @include card(red, white, 'images/chart-down.svg', 'Deu ruim!');
 }
 
 

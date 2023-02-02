@@ -11,6 +11,18 @@
   margin-top: 32px;
   padding: 32px;
   color: black;
+  position: relative;
+}
+
+.card-positive:after {
+  content: "status: Deu bom!";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: black;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 3px;
 }
 
 .card-negative {
@@ -26,6 +38,18 @@
   margin-top: 32px;
   padding: 32px;
   color: white;
+  position: relative;
+}
+
+.card-negative:after {
+  content: "status: Deu ruim!";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: black;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 3px;
 }
 
 .btn {
