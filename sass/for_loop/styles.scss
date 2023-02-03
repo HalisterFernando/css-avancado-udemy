@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+  }
+  
+
+div {
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+@for $item from 1 to 6 {
+    @if $item % 2 == 0 {
+
+        li:nth-child(#{$item}) {
+            height: 40px;
+            line-height: 40px;
+            background-color: blue;
+        }
+    }
+}
+
+li {   
+    height: 40px;
+    line-height: 40px;
+}
