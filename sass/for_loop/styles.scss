@@ -4,8 +4,7 @@ h1 {
   
 
 div {
-    display: flex;
-    width: 400px;
+    display: flex;    
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -14,8 +13,38 @@ div {
     border-radius: 8px;
 }
 
+@mixin responsive($screen) {
+    @if $screen == mobile {
+        @media screen and (min-width: 360px) and (max-width: 767px) {
+            @content
+        };
+    }@else if $screen == tablet {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            @content
+        };
+        
+    }@else if $screen == desktop {
+        @media screen and (min-width: 1200px) {
+            @content
+        };
+        
+    }
+}
+
 ul {
     list-style: none;
+    @include responsive(mobile) {
+        background-color: green;
+        width: 300px;
+    }
+    @include responsive(tablet) {
+        background-color: pink;
+        width: 700px;
+    }
+    @include responsive(desktop) {
+        background-color: cyan;
+        width: 1000px;
+    }
 }
 
 @for $item from 1 to 6 {
@@ -28,6 +57,8 @@ ul {
         }
     }
 }
+
+
 
 li {   
     height: 40px;

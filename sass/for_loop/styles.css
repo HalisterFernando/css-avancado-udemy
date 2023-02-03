@@ -6,7 +6,6 @@ div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 400px;
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -21,6 +20,27 @@ div {
 
 ul {
   list-style: none;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  ul {
+    background-color: green;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  ul {
+    background-color: pink;
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  ul {
+    background-color: cyan;
+    width: 1000px;
+  }
 }
 
 li:nth-child(2) {
